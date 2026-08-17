@@ -1319,7 +1319,7 @@ function App() {
     {/* RIGHT SIDE */}
     <div className="contact-grid">
 
-      {/* EMAIL */}
+    {/* EMAIL */}
 <a
   href="mailto:abdulremanqaiser05@gmail.com"
   className="contact-card"
@@ -1330,14 +1330,20 @@ function App() {
 
   <div
     className="contact-card-info"
-    style={{ minWidth: 0 }}
+    style={{
+      minWidth: 0,
+      flex: 1,
+    }}
   >
     <small>EMAIL</small>
 
     <strong
       style={{
-        overflowWrap: "anywhere",
-        wordBreak: "break-word",
+        display: "block",
+        maxWidth: "100%",
+        whiteSpace: "normal",
+        wordBreak: "normal",
+        overflowWrap: "break-word",
       }}
     >
       abdulremanqaiser05@gmail.com
@@ -1351,32 +1357,44 @@ function App() {
   <b>↗</b>
 </a>
 
-      {/* PHONE */}
-      <a
-        href="tel:+923326948600"
-        className="contact-card"
-      >
-        <div className="contact-card-icon phone-icon">
-          ♧
-        </div>
 
-        <div className="contact-card-info">
-          <small>PHONE</small>
+{/* PHONE */}
+<a
+  href="tel:+923326948600"
+  className="contact-card"
+>
+  <div className="contact-card-icon phone-icon">
+    ♧
+  </div>
 
-          <strong>
-            +92 332 6948600
-          </strong>
+  <div
+    className="contact-card-info"
+    style={{
+      minWidth: 0,
+      flex: 1,
+    }}
+  >
+    <small>PHONE</small>
 
-          <span>
-            Available for calls
-          </span>
-        </div>
+    <strong
+      style={{
+        display: "block",
+        maxWidth: "100%",
+        whiteSpace: "normal",
+        wordBreak: "normal",
+        overflowWrap: "break-word",
+      }}
+    >
+      +92 332 6948600
+    </strong>
 
-        <b>↗</b>
-      </a>
+    <span>
+      Available for calls
+    </span>
+  </div>
 
-
-
+  <b>↗</b>
+</a>
      {/* LINKEDIN */}
 <a
   href="https://www.linkedin.com/in/abdulrehman-qaiser-996468285"

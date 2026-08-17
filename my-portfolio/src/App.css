@@ -3972,6 +3972,7 @@ footer div:nth-child(2) {
     transform: none;
   }
 }
+
 @media (max-width: 700px) {
 
   .contact-layout {
@@ -4005,6 +4006,8 @@ footer div:nth-child(2) {
   }
 
 }
+
+
 /* =====================================================
    CONTACT — PREMIUM LAYOUT
 ===================================================== */
@@ -4022,6 +4025,7 @@ footer div:nth-child(2) {
   align-items: start;
   margin-top: 70px;
 }
+
 
 /* =====================================================
    LEFT SIDE
@@ -4320,6 +4324,12 @@ footer div:nth-child(2) {
   }
 
 }
+
+
+/* =====================================================
+   CONTACT GRID — SPACING
+===================================================== */
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4328,7 +4338,9 @@ footer div:nth-child(2) {
   background: transparent;
   border: none;
 }
---/* =====================================================
+
+
+/* =====================================================
    HERO / LOGO REFERENCE STYLE
    ONLY changes the logo + hero typography/layout
 ===================================================== */
@@ -4371,3 +4383,53 @@ footer div:nth-child(2) {
   opacity: 0.8;
 }
 
+
+/* =====================================================
+   MOBILE FIX — EMAIL & PHONE CARDS
+===================================================== */
+
+@media (max-width: 600px) {
+
+  /* THIS is the important fix */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-card {
+    min-width: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .contact-card-info {
+    min-width: 0 !important;
+    width: auto !important;
+    flex: 1 1 auto !important;
+    overflow: visible !important;
+  }
+
+  .contact-card-info strong {
+    max-width: 100% !important;
+    font-size: 15px !important;
+    line-height: 1.35 !important;
+    letter-spacing: 0 !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+  }
+
+  .contact-card-info span {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+  }
+
+  .contact-card-icon {
+    flex-shrink: 0 !important;
+  }
+
+  .contact-card > b {
+    flex-shrink: 0 !important;
+  }
+
+}
