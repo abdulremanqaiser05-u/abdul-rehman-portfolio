@@ -777,7 +777,7 @@ function App() {
             <span>NEW</span><br />
             <span>idea?</span><br />
             <span>Drop </span>
-            <span>Here</span><br />
+            <span>it</span><br />
 
           </div>
 
@@ -900,7 +900,7 @@ function App() {
     <div className="about-text">
 
       <p className="lead">
-        I'm Abdul. I build websites that try to
+        I'm Abdul Rehman....I build websites that try to
         look clean and feel responsive. Not
         inventing the next big framework —
         just making solid, usable interfaces.
