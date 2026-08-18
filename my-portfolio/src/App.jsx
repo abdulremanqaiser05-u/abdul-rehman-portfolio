@@ -34,13 +34,14 @@ const projects = [
   video: "/videos/project-07.mp4",
   github: "https://github.com/abdulremanqaiser05-u/Coffee-Brew",
 },
-  {
-    number: "05",
-    title: "SPIDER — Cursor Experiment",
-    category: "Interactive Experiment",
-    tech: "HTML • CSS • JavaScript",
-    video: "/videos/project-03.mp4",
-  },
+{
+  number: "05",
+  title: "SPIDER — Cursor Experiment",
+  category: "Interactive Experiment",
+  tech: "HTML • CSS • JavaScript",
+  video: "/videos/project-03.mp4",
+  github: "https://github.com/abdulremanqaiser05-u/Spider",
+},
   {
     number: "06",
     title: "ATMOS — Weather Dashboard",
