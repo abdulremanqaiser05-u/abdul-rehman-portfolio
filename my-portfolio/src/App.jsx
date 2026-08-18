@@ -42,13 +42,14 @@ const projects = [
   video: "/videos/project-03.mp4",
   github: "https://github.com/abdulremanqaiser05-u/Spider",
 },
-  {
-    number: "06",
-    title: "ATMOS — Weather Dashboard",
-    category: "Weather • Web App",
-    tech: "HTML • CSS • JavaScript • API",
-    video: "/videos/project-06.mp4",
-  },
+{
+  number: "06",
+  title: "ATMOS — Weather Dashboard",
+  category: "Weather • Web App",
+  tech: "HTML • CSS • JavaScript • API",
+  video: "/videos/project-06.mp4",
+  github: "https://github.com/abdulremanqaiser05-u/Weather",
+},
   {
     number: "07",
     title: "3D Image Sphere — Interactive Photo Globe",
