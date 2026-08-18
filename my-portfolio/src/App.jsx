@@ -2,13 +2,14 @@ import { useEffect, useState, useRef } from "react";
 import "./App.css";
 
 const projects = [
-  {
-    number: "01",
-    title: "NOVA — Premium Store",
-    category: "E-Commerce",
-    tech: "HTML · CSS · JavaScript",
-    video: "/videos/project-01.mp4",
-  },
+{
+  number: "01",
+  title: "NOVA — Premium Store",
+  category: "E-Commerce",
+  tech: "HTML · CSS · JavaScript",
+  video: "/videos/project-01.mp4",
+  github: "https://github.com/abdulremanqaiser05-u/Nova",
+},
   {
     number: "02",
     title: "Helix — Nothing Here Stands Stil",
@@ -1477,89 +1478,89 @@ function App() {
       </div>
 
       {/* =================================================
-          FULLSCREEN PROJECT VIEWER
-      ================================================= */}
+      FULLSCREEN PROJECT VIEWER
+  ================================================= */}
 
-      {selectedProject && (
-        <div
-          className="project-viewer"
-          role="dialog"
-          aria-modal="true"
-          aria-label={`${selectedProject.title} project viewer`}
-          onClick={(event) => {
-            if (
-              event.target ===
-              event.currentTarget
-            ) {
-              closeProject();
-            }
-          }}
-        >
-          <div className="viewer-top">
-            <div className="viewer-number">
-              PROJECT /{" "}
-              {
-                selectedProject.number
-              }
-            </div>
+{selectedProject && (
+  <div
+    className="project-viewer"
+    role="dialog"
+    aria-modal="true"
+    aria-label={`${selectedProject.title} project viewer`}
+    onClick={(event) => {
+      if (
+        event.target ===
+        event.currentTarget
+      ) {
+        closeProject();
+      }
+    }}
+  >
+    <div className="viewer-top">
+      <div className="viewer-number">
+        PROJECT /{" "}
+        {selectedProject.number}
+      </div>
 
-            <button
-              type="button"
-              className="viewer-close"
-              onClick={
-                closeProject
-              }
-              aria-label="Close project viewer"
-            >
-              ×
-            </button>
+      <button
+        type="button"
+        className="viewer-close"
+        onClick={closeProject}
+        aria-label="Close project viewer"
+      >
+        ×
+      </button>
+    </div>
+
+    <div className="viewer-content">
+      <div className="viewer-video-wrap">
+        <video
+          className="viewer-video"
+          src={selectedProject.video}
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls
+          preload="auto"
+        />
+      </div>
+
+      <div className="viewer-info">
+        <div>
+          <div className="viewer-category">
+            {selectedProject.category}
           </div>
 
-          <div className="viewer-content">
-            <div className="viewer-video-wrap">
-              <video
-                className="viewer-video"
-                src={
-                  selectedProject.video
-                }
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls
-                preload="auto"
-              />
-            </div>
+          <h2>
+            {selectedProject.title}
+          </h2>
 
-            <div className="viewer-info">
-              <div>
-                <div className="viewer-category">
-                  {
-                    selectedProject.category
-                  }
-                </div>
-
-                <h2>
-                  {
-                    selectedProject.title
-                  }
-                </h2>
-
-                <div className="viewer-tech">
-                  {
-                    selectedProject.tech
-                  }
-                </div>
-              </div>
-
-              <div className="viewer-hint">
-                ESC TO CLOSE ·
-                CLICK OUTSIDE TO CLOSE
-              </div>
-            </div>
+          <div className="viewer-tech">
+            {selectedProject.tech}
           </div>
         </div>
-      )}
+
+        <div className="viewer-actions">
+          {selectedProject.github && (
+            <a
+              href={selectedProject.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="viewer-github"
+            >
+              VIEW GITHUB <span>↗</span>
+            </a>
+          )}
+
+          <div className="viewer-hint">
+            ESC TO CLOSE · CLICK OUTSIDE TO CLOSE
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
     </>
   );
 }
