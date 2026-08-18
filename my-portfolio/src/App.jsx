@@ -74,13 +74,14 @@ const projects = [
   video: "/videos/project-09.mp4",
   github: "https://github.com/abdulremanqaiser05-u/Reptile",
 },
-  {
-    number: "10",
-    title: "LIVE MAP — Real-Time Navigation",
-    category: "Maps • Navigation",
-    tech: "React • JavaScript • CSS • Maps API",
-    video: "/videos/project-10.mp4",
-  },
+ {
+  number: "10",
+  title: "LIVE MAP — Real-Time Navigation",
+  category: "Maps • Navigation",
+  tech: "React • JavaScript • CSS • Maps API",
+  video: "/videos/project-10.mp4",
+  github: "https://github.com/abdulremanqaiser05-u/Live-Map",
+},
 ];
 
 const skills = [
